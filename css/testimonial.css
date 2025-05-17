@@ -1,0 +1,244 @@
+/* Testimonial Section */
+.testimonial-item {
+    background: #eaf9f0;
+    transition: all 0.3s;
+    border-radius: 8px;
+    padding: 25px;
+    margin: 0 10px;
+}
+
+.owl-item.center .testimonial-item {
+    background: #00a86b;
+    color: #fff;
+    transform: scale(1.05);
+    box-shadow: 0 8px 30px rgba(0, 168, 107, 0.2);
+}
+
+.owl-item.center .testimonial-item i,
+.owl-item.center .testimonial-item h5,
+.owl-item.center .testimonial-item small {
+    color: #fff !important;
+}
+
+.testimonial-item img {
+    width: 50px;
+    height: 50px;
+    border: 2px solid transparent;
+    transition: all 0.3s;
+}
+
+.owl-item.center .testimonial-item img {
+    border-color: #fff;
+}
+
+/* Owl Carousel Dots */
+.owl-dots {
+    margin-top: 20px !important;
+}
+
+.owl-dot span {
+    background: #eaf9f0 !important;
+}
+
+.owl-dot.active span {
+    background: #00a86b !important;
+}
+
+@media (max-width: 768px) {
+    .testimonial-item {
+        margin: 0 5px;
+        padding: 15px;
+    }
+}
+
+
+/* Add to your CSS */
+/* Image sizing */
+.image-container {
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+    flex-shrink: 0;
+}
+
+.client-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Text container */
+.client-info {
+    min-width: 300px;
+    padding-left: 1rem;
+}
+
+.client-name {
+    font-size: 1rem;
+    line-height: 1.2;
+    word-break: break-word;
+}
+
+.client-role {
+    font-size: 0.85rem;
+    line-height: 1.3;
+    display: block;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .image-container {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .client-name {
+        font-size: 0.9rem;
+    }
+    
+    .client-role {
+        font-size: 0.8rem;
+    }
+}
+
+/* Prevent text overflow */
+.testimonial-text {
+    overflow-wrap: break-word;
+    hyphens: auto;
+}
+
+
+
+
+/* Container holding all news items */
+.news-container {
+    max-width: 1300px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+/* Individual news item card */
+.news-item {
+    width: calc(33.333% - 1rem);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Hover effect on news item */
+.news-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    background: #fff;
+}
+
+/* News image styles */
+.news-image img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 4px;
+    transition: transform 0.2s;
+}
+
+/* Slight zoom on image hover */
+.news-image:hover img {
+    transform: scale(1.02);
+}
+
+/* Content wrapper */
+.news-content {
+    flex: 1;
+}
+
+/* News title */
+.news-title {
+    color: #1a2b3c;
+    margin-bottom: 0.75rem;
+    font-size: 1.2rem;
+    line-height: 1.4;
+    font-weight: 600;
+}
+
+/* News summary/excerpt */
+.news-excerpt {
+    color: #5a6b7c;
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+/* Meta data (time + category) */
+.news-meta {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    font-size: 0.85rem;
+}
+
+/* Time display with clock emoji */
+.news-time {
+    color: #7f8c8d;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.news-time::before {
+    content: "🕒";
+    font-size: 0.9em;
+}
+
+/* Category label */
+.news-category {
+    color: #2e7d32;
+    font-weight: 600;
+    padding: 4px 10px;
+    background: #edf7ed;
+    border-radius: 20px;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Responsive styles */
+@media (max-width: 992px) {
+    .news-item {
+        width: calc(50% - 1rem);
+    }
+}
+
+@media (max-width: 768px) {
+    .news-container {
+        flex-direction: column;
+    }
+
+    .news-item {
+        width: 100%;
+        padding: 1.25rem;
+    }
+
+    .news-image img {
+        height: 180px;
+    }
+
+    .news-meta {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+    }
+
+    .news-title {
+        font-size: 1.15rem;
+    }
+}
