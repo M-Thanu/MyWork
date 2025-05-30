@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | WayCanSee</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="img/favicon.ico" rel="icon">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Font Awesome (optional) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+ 
+
+:root {
+    --primary: #00B074;
+    --secondary: #2B9BFF;
+    --light: #EFFDF5;
+    --dark: #2B3940;
+}
+
+.nav-link {
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: #333 !important;
+      transition: all 0.3s ease;
+    }
+    .nav-link:hover {
+      color: #00B074 !important;
+      transform: scale(1.05);
+    }
+
+    .navbar-brand h1 {
+      font-size: 2rem;
+      margin: 0;
+      color: #00B074;
+    }
+
+/*** Button ***/
+.btn {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    transition: .5s;
+}
+
+.btn.btn-primary,
+.btn.btn-secondary {
+    color: #FFFFFF;
+}
+
+.btn-square {
+    width: 38px;
+    height: 38px;
+}
+
+.btn-sm-square {
+    width: 32px;
+    height: 32px;
+}
+
+.btn-lg-square {
+    width: 48px;
+    height: 48px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+    border-radius: 2px;
+}
+
+
+
+/*** Footer ***/
+.footer .btn.btn-social {
+    margin-right: 5px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--light);
+    border: 1px solid rgba(255,255,255,0.5);
+    border-radius: 2px;
+    transition: .3s;
+}
+
+.footer .btn.btn-social:hover {
+    color: var(--primary);
+    border-color: var(--light);
+}
+
+.footer .btn.btn-link {
+    display: block;
+    margin-bottom: 5px;
+    padding: 0;
+    text-align: left;
+    font-size: 15px;
+    font-weight: normal;
+    text-transform: capitalize;
+    transition: .3s;
+}
+
+.footer .btn.btn-link::before {
+    position: relative;
+    content: "\f105";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 10px;
+}
+
+.footer .btn.btn-link:hover {
+    letter-spacing: 1px;
+    box-shadow: none;
+}
+
+.footer .form-control {
+    border-color: rgba(255,255,255,0.5);
+}
+
+.footer .copyright {
+    padding: 25px 0;
+    font-size: 15px;
+    border-top: 1px solid rgba(256, 256, 256, .1);
+}
+
+.footer .copyright a {
+    color: var(--light);
+}
+
+.footer .footer-menu a {
+    margin-right: 15px;
+    padding-right: 15px;
+    border-right: 1px solid rgba(255, 255, 255, .1);
+}
+
+.footer .footer-menu a:last-child {
+    margin-right: 0;
+    padding-right: 0;
+    border-right: none;
+}
+
+  </style>
+</head>
+<body>
+
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg bg-white shadow sticky-top" style="padding: 0; height: 80px;">
+  <div class="container-fluid px-4">
+    <a class="navbar-brand d-flex align-items-center" href="Home.html">
+      <h1>WayCanSee</h1>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
+      <ul class="navbar-nav align-items-center">
+        <li class="nav-item">
+          <a class="nav-link" href="Home.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="jobs.html">Jobs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contactpage.html">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="createprofile.html">Create Profile</a>
+        </li>
+      </ul>
+     
+
+    </div>
+  </div>
+</nav>
+
+
+
+
+    <!-- Header Start -->
+        <div style="
+    background: url('data:image/jpeg;base64,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') no-repeat center center/cover;
+    height: 300px;
+    width: 100%;
+    position: relative;">
+    
+    <div style="
+        background-color: rgba(0, 0, 0, 0.5);
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;">
+        
+        <h1 style="
+            color: white;
+            font-size: 48px;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);">
+            Contact
+        </h1>
+    </div>
+</div>
+        <!-- Header End -->
+
+
+        <!-- Contact Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <h1 class="text-center mb-5">Contact For Any Query</h1>
+                <div class="row g-4">
+                    <div class="col-12">
+                        <div class="row gy-4">
+                            <div class="col-md-4">
+                                <div class="d-flex align-items-center bg-light rounded p-4">
+                                    <div class="bg-white border rounded d-flex flex-shrink-0 align-items-center justify-content-center me-3" style="width: 45px; height: 45px;">
+                                        <i class="fa fa-map-marker-alt" style="color: #00B074;"></i>
+                                    </div>
+                                    <span> 39/3 Horton Place,<br>Colombo 7, Sri Lanka</span>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="d-flex align-items-center bg-light rounded p-4">
+                                    <div class="bg-white border rounded d-flex flex-shrink-0 align-items-center justify-content-center me-3" style="width: 45px; height: 45px;">
+                                        <i class="fa fa-envelope-open" style="color: #00B074;"></i>
+
+                                    </div>
+                                    <span>waycansee@gmail.com</span>
+                                </div>
+                            </div>
+                            <div class="col-md-4 wow fadeIn" data-wow-delay="0.5s">
+                                <div class="d-flex align-items-center bg-light rounded p-4">
+                                    <div class="bg-white border rounded d-flex flex-shrink-0 align-items-center justify-content-center me-3" style="width: 45px; height: 45px;">
+                                        <i class="fa fa-phone-alt" style="color: #00B074;"></i>
+                                    </div>
+                                    <span>+94 771 345 6789</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                       <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d126767.42873895107!2d79.81487155783353!3d6.832647750552301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d6.7534848!2d79.93098239999999!4m5!1s0x3ae2596d4572da53%3A0x9e03c378a6e472c4!2s39%2F3%20Horton%20Place%20Colombo%207%20Sri%20Lanka%2C%2039%2F3%20Horton%20Pl%2C%20Colombo%2000700!3m2!1d6.9120178!2d79.8685698!5e0!3m2!1sen!2slk!4v1746965190016!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="wow fadeInUp" data-wow-delay="0.5s">
+                            
+                            <form>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                            <label for="name">Your Name</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                            <label for="email">Your Email</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                            <label for="subject">Subject</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 150px"></textarea>
+                                            <label for="message">Message</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <button class="btn w-100 py-3" style="background-color: #00B074; border: none; color: white;" type="submit">
+  Send Message
+</button>
+
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact End -->
+
+
+  <!-- Footer Start -->
+        <!-- Section 1: Main Footer Content -->
+<section class="container-fluid bg-dark text-white-50 pt-5 mt-5">
+  <div class="container py-5">
+    <div class="row g-5">
+      
+      <!-- Quick Links -->
+      <div class="col-lg-4 col-md-6">
+        <h5 class="text-white mb-4">Quick Links</h5>
+        <a class="btn btn-link text-white-50" href="#">About Us</a>
+        <a class="btn btn-link text-white-50" href="#">Contact Us</a>
+        <a class="btn btn-link text-white-50" href="#">Our Services</a>
+        <a class="btn btn-link text-white-50" href="#">Privacy Policy</a>
+        <a class="btn btn-link text-white-50" href="#">Terms & Conditions</a>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="col-lg-4 col-md-6">
+        <h5 class="text-white mb-4">Contact</h5>
+        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, Colombo, Sri Lanka</p>
+        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+94 77 123 4567</p>
+        <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@waycansee.lk</p>
+        <div class="d-flex pt-2">
+          <a class="btn btn-outline-light btn-social me-2" href="#"><i class="fab fa-twitter"></i></a>
+          <a class="btn btn-outline-light btn-social me-2" href="#"><i class="fab fa-facebook-f"></i></a>
+          <a class="btn btn-outline-light btn-social me-2" href="#"><i class="fab fa-youtube"></i></a>
+          <a class="btn btn-outline-light btn-social me-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="col-lg-4 col-md-12">
+        <h5 class="text-white mb-4">Newsletter</h5>
+        <p>Subscribe to receive updates on the latest jobs and company news.</p>
+        <div class="position-relative" style="max-width: 400px;">
+          <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+          <button type="button" class="btn btn-success py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Section 2: Divider Line -->
+<section style="background-color: #2c2c2c; height: 1px;"></section>
+
+<!-- Section 3: Copyright -->
+<section class="container-fluid bg-dark text-white-50 py-3">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
+        &copy; <a class="border-bottom text-white" href="#">WayCanSee</a>, All Rights Reserved.
+      </div>
+      <div class="col-md-6 text-center text-md-end">
+        <div class="footer-menu">
+          <a href="Home.html" class="text-white-50 me-3">Home</a>
+          <a href="about.html" class="text-white-50 me-3">Cookies</a>
+          <a href="#" class="text-white-50 me-3">Help</a>
+          <a href="#" class="text-white-50">FAQs</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap Icons CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</body>
+</html>
